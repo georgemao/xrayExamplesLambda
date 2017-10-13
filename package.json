@@ -1,0 +1,15 @@
+{
+  "name": "xrayexampleslambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xraytest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.133.0",
+    "aws-xray-sdk-core": "^1.1.4"
+  }
+}
