@@ -21,6 +21,7 @@ exports.handler = function (event, context, callback) {
     console.log(process.env.X_AMZN_TRACE_ID);
     console.log(process.env.TESTVAR);
     
+    // Try to upload to a bucket that does not exist - will Fail
     params ={
         Bucket: 'doesnotexistblsucket',
         Key:'key',
@@ -31,8 +32,7 @@ exports.handler = function (event, context, callback) {
 
     });
 
-
-
+    // Upload to a bucket that exists - will Succeded
     var params ={
         Bucket: 'awsgeorge',
         Key:'key',
@@ -44,7 +44,7 @@ exports.handler = function (event, context, callback) {
     });
 
     
-
+    // Performa a DDB Scan - will succeed
     params = {
         TableName:'Buckets'
     };
