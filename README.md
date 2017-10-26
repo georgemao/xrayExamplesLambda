@@ -25,7 +25,7 @@ var AWS  = AWSXRay.captureAWS(require('aws-sdk'));
 Upon inspecting the X-Ray trace results, we see something like this:
 ![SAM Local Start API](media/xray.png)
 
-It becomes obvious that the S3 PutObjects encountered failures
+It becomes obvious that the S3 PutObjects encountered failures. We can also see the timing of each API call.
 
 ## Resources
 
