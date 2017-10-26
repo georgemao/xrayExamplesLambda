@@ -6,7 +6,7 @@ This example demostrates how to use X-Ray to instrument a "mock" application. Th
 
 1. Performs a S3 PutObject to a bucket that does not exist
 2. Performs a S3 PutObject to a bucket that exists, but we have no permissions to
-3. Performa a Scan against a DynamoDB Table
+3. Performs a Scan against a DynamoDB Table
 
 There is no error catching or logging place and the code simply returns a success code at the end:
 
