@@ -40,7 +40,7 @@ Then install the X-Ray Node SDK
 npm install aws-xray-sdk --save
 ```
 
-Once you have written your code, zip the *contents* of the working folder (not the to level folder itself) and upload to Lambda to test!
+Once you have written your code, zip the *contents* of the working folder (not the top level folder itself) and upload to Lambda to test!
 
 ## Resources
 
