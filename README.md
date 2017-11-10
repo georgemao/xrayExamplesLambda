@@ -34,7 +34,14 @@ You must install the X-Ray Node SDK in your working directory. First create your
 ```
 npm init
 ```
-Then install the X-Ray Node SDK
+
+Then install the X-Ray Node SDK:
+
+```
+npm install aws-xray-sdk
+```
+
+You can also add the SDK as a dependency in the package.json file:
 
 ```
 npm install aws-xray-sdk --save
