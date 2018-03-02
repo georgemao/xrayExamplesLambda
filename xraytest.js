@@ -1,3 +1,6 @@
+// This example shows a poorly written piece of code. There is no error handling and always returns success.
+// Xray is enabled and tracing all calls. We can use Xray to identify the errors very effectively
+
 'use strict'
 //process.env['AWS_XRAY_DAEMON_ADDRESS'] = '127.0.0.1:3000';
 
@@ -32,7 +35,7 @@ exports.handler = function (event, context, callback) {
 
     });
 
-    // Upload to a bucket that exists - will Succeded
+    // Upload to a bucket that exists - IAM role does not provide permissions to
     var params ={
         Bucket: 'awsgeorge',
         Key:'key',
@@ -44,7 +47,7 @@ exports.handler = function (event, context, callback) {
     });
 
     
-    // Performa a DDB Scan - will succeed
+    // Perform a DDB Scan - will succeed
     params = {
         TableName:'Buckets'
     };
