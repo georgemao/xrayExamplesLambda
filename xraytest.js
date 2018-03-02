@@ -26,7 +26,7 @@ exports.handler = function (event, context, callback) {
     
     // Try to upload to a bucket that does not exist - will Fail
     params ={
-        Bucket: 'doesnotexistblsucket',
+        Bucket: 'doesnotexistbucket',
         Key:'key',
         Body:'mybody'
     };
